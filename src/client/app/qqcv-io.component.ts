@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+import {PurpleAligatorComponent} from './+purple-aligator';
 
 @Component({
   moduleId: __moduleName,
@@ -11,6 +12,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router'
   pipes: []
 })
 @RouteConfig([
+  {path: '/purple-aligator', name: 'PurpleAligator', component: PurpleAligatorComponent}
 ])
 export class QqcvIoApp {
   defaultMeaning: number = 42;
