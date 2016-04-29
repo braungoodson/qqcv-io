@@ -11,4 +11,9 @@ describe('qqcv-io App', function() {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('qqcv-io Works!');
   });
+
+  it('should display the purple aligator', () => {
+    page.navigateToPurpleAligator();
+    expect(page.getPurpleAligatorText()).toEqual('purple-aligator Works!');
+  });
 });
